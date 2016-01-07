@@ -9085,6 +9085,10 @@ figure {
 #chart-holder canvas {
     width: 170px
 }
+img{
+    display: block;
+    margin: 0 auto;
+}                   
 .img2-text-align {
     display: flex;
     margin-bottom: 85px;
@@ -9115,7 +9119,7 @@ figure {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .phone5-img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 .macbook-img {
@@ -9125,13 +9129,87 @@ figure {
 .phone-txt {
     margin-top: 50px;
 }
+.section-macbook {
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
 
-@media (min-width: 420px) {
+
+@media screen and (max-width : 520px) {
+   
     .section-macbook
     {
-        padding-top: 10px;
+        padding-top: 50px;
         padding-bottom: 10px;
     }
+    .phone5-top-txt
+    {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+
+    }
+    .phone5-bottom-txt
+    {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 15px;
+
+    }
+    .macbook-top-txt
+    {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width : 1200px) and (min-width : 520px ) {
+   
+    .section-macbook
+    {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .phone5-top-txt
+    {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 40px;
+    }                       
+    .phone5-bottom-txt
+    {
+        text-align: center;
+    }
+    .macbook-top-txt
+    {
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+}
+
+@media screen and (max-width : 1200px) and (min-width : 992px ) {
+   .phone5-img
+   {
+    margin-left: 300px;
+   }
+   .macbook-img
+   {
+    padding-left: 180px;
+   }
+}
+@media screen and (max-width : 992px) and (min-width : 768px ) {
+   .phone5-img
+   {
+    margin-left: 200px;
+   }
+   .macbook-img
+   {
+    padding-left: 95px;
+   }
 }
 /*@media screen and (max-width: 420px)
 {
@@ -9196,10 +9274,7 @@ figure {
 }
 */
 
-.section-macbook {
-    padding-top: 180px;
-    padding-bottom: 180px;
-}
+
 /*.section-image{padding-top:2.8125rem}
 
 @media (min-width: 768px)
